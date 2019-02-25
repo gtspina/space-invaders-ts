@@ -22,7 +22,7 @@ npm run watch-rollup
 ```
 
 Run server (or use Task "Run Server"):
-PS: require lite-server installed as global packgage.
+PS: require lite-server installed as global package.
 ```
 npm run server
 ```
