@@ -1,0 +1,45 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Download Packages",
+            "type": "shell",
+            "command": "npm i",
+            "group": "build",
+            "problemMatcher": []
+        },
+        {
+            "label": "Build",
+            "type": "shell",
+            "command": "npm run build",
+            "group": "build",
+            "problemMatcher": []
+        },
+        {
+            "label": "Watch Tsc",
+            "type": "shell",
+            "command": "npm run watch-tsc"
+        },
+        {
+            "label": "Watch Rollup",
+            "type": "shell",
+            "command": "npm run watch-rollup"
+        },
+        {
+            "label": "Run Watcher",
+            "dependsOn": [
+                "Watch Tsc",
+                "Watch Rollup"
+            ],
+            "group": "build",
+            "problemMatcher": []
+        },
+        {
+            "label": "Run Server",
+            "type": "shell",
+            "command": "npm run server",
+            "group": "build",
+            "problemMatcher": []
+        },
+    ]
+}
